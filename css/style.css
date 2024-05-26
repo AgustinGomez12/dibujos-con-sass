@@ -1,0 +1,312 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+* body {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+}
+
+body {
+  background: linear-gradient(90deg, rgba(255, 0, 0, 0.616), rgba(0, 128, 0, 0.687));
+}
+body .pacman {
+  width: 100px;
+  margin: 80px;
+  border-top: 100px solid #ff0;
+  border-left: 100px solid #ff0;
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid #ff0;
+  border-radius: 50%;
+  position: relative;
+  top: -300px;
+}
+body .pacman::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+  top: -45px;
+  left: -5;
+}
+
+.book {
+  width: 300px;
+  height: 330px;
+  background-color: #7765b5;
+  margin: 50px;
+  border-radius: 10px;
+  box-shadow: 10px 10px #fff, 20px 20px rgba(0, 0, 0, 0.17);
+  position: relative;
+  top: -250px;
+}
+.book .circles {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 30px;
+  left: 7px;
+  color: #fff;
+  box-shadow: 0 40px, 0 80px, 0 120px, 0 160px, 0 200px, 0 240px;
+}
+.book .line {
+  position: absolute;
+  width: 30px;
+  height: 8px;
+  background-color: #319073;
+  color: #319073;
+  top: 3px;
+  left: -20px;
+  box-shadow: 0 40px, 0 80px, 0 120px, 0 160px, 0 200px, 0 240px;
+}
+
+.panda {
+  width: 200px;
+  height: 150px;
+  border: 6px solid;
+  border-radius: 50%;
+  margin: 80px;
+  position: relative;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -250px;
+}
+.panda .orejas {
+  width: 70px;
+  height: 70px;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  z-index: -1;
+  box-shadow: 118px 0;
+}
+.panda .nariz {
+  width: 30px;
+  height: 20px;
+  background-color: #000;
+  border-radius: 50%;
+  position: relative;
+  top: 20px;
+}
+.panda .ojo {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: #000;
+  border-radius: 50%;
+  top: 30px;
+  left: 20px;
+}
+.panda .ojo-r {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: #000;
+  border-radius: 50%;
+  top: 30px;
+  right: 20px;
+}
+.panda .pupila-r {
+  width: 28px;
+  height: 28px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  box-shadow: -15px 20px 0 -8px #fff;
+}
+.panda .pupila {
+  width: 28px;
+  height: 28px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  box-shadow: -15px 20px 0 -8px #fff;
+}
+.panda .linea-boca {
+  width: 8px;
+  height: 20px;
+  background-color: #000;
+  position: absolute;
+  top: 90px;
+  left: 90px;
+}
+.panda .boca {
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  border: 6px solid #000;
+  top: 5px;
+  left: -16px;
+  border-radius: 0px 0 60px 60px;
+  border-top: transparent;
+}
+
+.base-balanza {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  background-color: rgb(244, 169, 6);
+  border-radius: 100px 100px 5px 5px;
+  left: 120px;
+  top: -90px;
+}
+.base-balanza .palo-central {
+  width: 10px;
+  height: 400px;
+  background-color: rgb(244, 169, 6);
+  position: absolute;
+  top: -300px;
+  left: 93px;
+}
+.base-balanza .soporte-de-arriba {
+  width: 400px;
+  height: 15px;
+  background-color: rgb(244, 169, 6);
+  position: absolute;
+  top: -300px;
+  left: -100px;
+  border-radius: 200% 200% 0px 0px;
+}
+.base-balanza .circulo-de-arriba {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(244, 169, 6);
+  position: absolute;
+  top: -300px;
+  right: 77px;
+  border-radius: 10px 10px 50px 50px;
+  color: #ff0;
+  box-shadow: 0px 0px 1px 10px;
+}
+.base-balanza .cadena {
+  width: 15px;
+  height: 20px;
+  background-color: #ff0;
+  border-radius: 20px 20px 5px 5px;
+  color: #ff0;
+  box-shadow: 0px 20px, 0 40px, 0 60px, 0 80px, 0 100px;
+  position: absolute;
+  top: -290px;
+  left: -100px;
+}
+.base-balanza .cadena2 {
+  width: 15px;
+  height: 20px;
+  background-color: #ff0;
+  border-radius: 20px 20px 5px 5px;
+  color: #ff0;
+  box-shadow: 0px 20px, 0 40px, 0 60px, 0 80px, 0 100px;
+  position: absolute;
+  top: -290px;
+  right: -100px;
+}
+.base-balanza .hilo {
+  width: 6em;
+  height: 6em;
+  border: 5px solid #ff0;
+  border-bottom: none;
+  border-right: none;
+  position: absolute;
+  top: -153px;
+  left: -140px;
+  transform: rotate(45deg);
+}
+.base-balanza .hilo2 {
+  width: 6em;
+  height: 6em;
+  border: 5px solid #ff0;
+  border-bottom: none;
+  border-right: none;
+  position: absolute;
+  top: -153px;
+  right: -140px;
+  transform: rotate(45deg);
+}
+.base-balanza .plato1 {
+  width: 150px;
+  height: 50px;
+  background-color: #ff0;
+  border-radius: 20px 20px 200px 220px;
+  position: absolute;
+  top: -130px;
+  left: -166px;
+}
+.base-balanza .plato2 {
+  width: 150px;
+  height: 50px;
+  background-color: #ff0;
+  border-radius: 20px 20px 200px 220px;
+  position: absolute;
+  top: -130px;
+  right: -166px;
+}
+
+.pokebola {
+  width: 250px;
+  height: 250px;
+  border: 4px solid;
+  margin: 70px auto;
+  border-radius: 50%;
+  background-image: linear-gradient(#ff3e32 40%, #565658 40%, #565658 60%, #fff 60%);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  top: 20%;
+  right: 75%;
+}
+.pokebola .linepok {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #000;
+  top: 40%;
+  box-shadow: 0 44px;
+}
+.pokebola .circles {
+  width: 95px;
+  height: 95px;
+  border: 4px solid;
+  border-radius: 50%;
+  margin: auto;
+  background-color: #565658;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+}
+.pokebola .circles::before {
+  content: "";
+  background-color: #fff;
+  border-radius: 50%;
+  border: inherit;
+  width: 60px;
+  height: 60px;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.pokebola .circles::after {
+  content: "";
+  background-color: #fff;
+  border-radius: 50%;
+  border: inherit;
+  width: 28px;
+  height: 28px;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+/*# sourceMappingURL=style.css.map */
